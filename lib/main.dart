@@ -167,7 +167,7 @@ class _TaskScreenState extends State<TaskScreen> {
       'title': taskController.text.trim(),
       'priority': priority,
       'completed': false,
-      'dueDate': Timestamp.now(), // Default to current if not selected
+      'dueDate': Timestamp.now(),
       'createdAt': FieldValue.serverTimestamp(),
     });
     taskController.clear();
